@@ -37,6 +37,7 @@ class TodosController extends Controller
     }
 
 
+
     public function incomplete()
     {
       $todos = Todo::all();
@@ -68,8 +69,7 @@ class TodosController extends Controller
      */
     public function show($id)
     {
-      $todo = Todo::find($id);
-      return view('todos.show')->with('todo', $todo);
+      //
     }
 
     /**

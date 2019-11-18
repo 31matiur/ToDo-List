@@ -11,7 +11,6 @@
   <body>
     <h1>ToDos</h1>
     <div class="well">
-
       @if(count($todos) > 0)
           @foreach($todos as $todo)
             <div class="well">

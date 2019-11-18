@@ -14,5 +14,5 @@
 Route::get('/', 'TodosController@index');
 Route::get('complete', 'TodosController@complete');
 Route::get('incomplete', 'TodosController@incomplete');
-Route::get('create', 'TodosController@create');
+Route::get('create', 'TodosController@created');
 Route::resource('todo', 'TodosController');

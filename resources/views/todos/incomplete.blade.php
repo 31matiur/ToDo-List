@@ -5,6 +5,11 @@
 @section('content')
 
   <h1>ToDos</h1>
+  <div id="navbar" class="collapse navbar-collapse">
+    <ul class="nav navbar-nav">
+      <li class="{{Request::is('todo/create') ? 'active' : ''}}"><a href="todo/create">Create new job</a></li>
+    </ul>
+  </div>
   <div class="well">
 
     @if(count($todos) > 0)
@@ -14,14 +19,5 @@
           </div>
           @endforeach
       @endif
-      <button href="Create" type="button" class="btn btn-dark">Create new Todo</button>
     </div>
-
-    <script type="text/javascript">
-
-      document.getElementById('ticked')onclick = function () {
-
-      }
-
-    </script>
 @endsection
